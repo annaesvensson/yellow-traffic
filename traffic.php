@@ -1,5 +1,5 @@
 <?php
-// Traffic extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/traffic
+// Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
     const VERSION = "0.8.25";

@@ -8,7 +8,7 @@ Zugriffsanalysen aus Webserver-Logdateien erstellen.
 
 ## Wie man Zugriffsanalysen erstellt
 
-Die Zugriffsanalysen sind in der [Befehlszeile](https://github.com/datenstrom/yellow-extensions/tree/master/source/command/README-de.md) vorhanden. Es zeigt Seitenaufrufe, beliebte Inhalte, Dateien zum Herunterladen und Suchanfragen. Öffne ein Terminalfenster. Gehe ins Installations-Verzeichnis, dort wo sich die Datei `yellow.php` befindet. Gib ein `php yellow.php traffic` gefolgt von optionalen Tagen, Datum und Ort.
+Die Zugriffsanalysen sind in der [Befehlszeile](https://github.com/annaesvensson/yellow-command/tree/main/README-de.md) vorhanden. Es zeigt Seitenaufrufe, beliebte Inhalte, Dateien zum Herunterladen und Suchanfragen. Öffne ein Terminalfenster. Gehe ins Installations-Verzeichnis, dort wo sich die Datei `yellow.php` befindet. Gib ein `php yellow.php traffic` gefolgt von optionalen Tagen, Datum und Ort.
 
 ## Beispiele
 
@@ -84,7 +84,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 ## Installation
 
-[Erweiterung herunterladen](https://github.com/datenstrom/yellow-extensions/raw/master/downloads/traffic.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
+[Erweiterung herunterladen](https://github.com/annaesvensson/yellow-traffic/archive/main.zip) und die Zip-Datei in dein `system/extensions`-Verzeichnis kopieren. Rechtsklick bei Safari.
 
 ## Entwickler
 
