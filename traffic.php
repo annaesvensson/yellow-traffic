@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.8.25";
+    const VERSION = "0.8.26";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -129,7 +129,8 @@ class YellowTraffic {
                     while (($line = $this->getFileLinePrevious($fileHandle, $filePos, $fileTop, $dataBuffer))!==false) {
                         list($timestamp, $method, $uri, $protocol, $status, $referer, $userAgent) = $this->getLineArguments($line);
                         $timeFound = strtotime($timestamp);
-                        if ($timeFound>$timeStart || $timeFound<$timeStop) continue;
+                        if ($timeFound>$timeStart) continue;
+                        if ($timeFound<$timeStop) break;
                         $percent = $this->getProgressPercent(($timeStart-$timeFound)/3600, 24*$days, 5, 95);
                         if ($percentShown!=$percent) {
                             $percentShown = $percent;
