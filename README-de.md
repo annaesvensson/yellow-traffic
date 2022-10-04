@@ -2,7 +2,7 @@
 
 # Traffic 0.8.26
 
-Zugriffsanalysen aus Webserver-Logdateien erstellen.
+Zugriffsanalysen aus Logdateien erstellen.
 
 <p align="center"><img src="traffic-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
