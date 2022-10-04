@@ -2,7 +2,7 @@
 
 # Traffic 0.8.26
 
-Skapa trafikanalyser från webbserverns loggfiler.
+Skapa trafikanalyser från loggfiler.
 
 <p align="center"><img src="traffic-screenshot.png?raw=true" alt="Skärmdump"></p>
 
