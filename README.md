@@ -2,7 +2,7 @@
 
 # Traffic 0.8.26
 
-Create traffic analytics from web server log files.
+Create traffic analytics from log files.
 
 <p align="center"><img src="traffic-screenshot.png?raw=true" alt="Screenshot"></p>
 
