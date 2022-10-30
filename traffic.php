@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.8.26";
+    const VERSION = "0.8.27";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -30,7 +30,7 @@ class YellowTraffic {
 
     // Handle command help
     public function onCommandHelp() {
-        return "traffic [days date location]\n";
+        return "traffic [days date location]";
     }
     
     // Process command to create traffic analytics
