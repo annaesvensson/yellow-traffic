@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.8.27";
+    const VERSION = "0.8.28";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -37,7 +37,7 @@ class YellowTraffic {
     public function processCommandTraffic($command, $text) {
         $statusCode = 0;
         list($days, $date, $location) = $this->yellow->toolbox->getTextArguments($text);
-        if (empty($location) || substru($location, 0, 1)=="/") {
+        if (is_string_empty($location) || substru($location, 0, 1)=="/") {
             if ($this->checkStaticSettings()) {
                 $statusCode = $this->processRequests($days, $date, $location);
             } else {
@@ -58,8 +58,8 @@ class YellowTraffic {
     
     // Analyse and show traffic
     public function processRequests($days, $date, $location) {
-        if (empty($days)) $days = $this->yellow->system->get("trafficDays");
-        if (empty($location)) $location = "/";
+        if (is_string_empty($days)) $days = $this->yellow->system->get("trafficDays");
+        if (is_string_empty($location)) $location = "/";
         $path = $this->yellow->system->get("trafficLogDirectory");
         $regex = "/^".basename($this->yellow->system->get("trafficAccessFile"))."$/";
         $fileNames = array_reverse($this->yellow->toolbox->getDirectoryEntries($path, $regex, true, false));
@@ -87,9 +87,9 @@ class YellowTraffic {
     public function analyseRequests($days, $date, $locationFilter, $fileNames) {
         $this->days = $this->views = $this->requests = 0;
         $view = $request = $content = $download = $search = $referring = $missing = $error = array();
-        if (!empty($fileNames)) {
+        if (!is_array_empty($fileNames)) {
             $statusCode = 200;
-            if (empty($date)) {
+            if (is_string_empty($date)) {
                 $timeStart = $timeFound = (intval(time()/3600)*3600)+3600;
                 $timeStop = $timeStart - (60*60*24*$days);
             } else {
@@ -194,7 +194,7 @@ class YellowTraffic {
     
     // Show requests as list sorted by frequency
     public function showRequestsList($data, $text) {
-        if (!empty($data)) {
+        if (!is_array_empty($data)) {
             uasort($data, "strnatcasecmp");
             $data = array_reverse($data);
             $data = array_slice($data, 0, $this->yellow->system->get("trafficLinesMax"));
@@ -209,7 +209,7 @@ class YellowTraffic {
     
     // Show requests as graph over time
     public function showRequestsGraph($data, $text) {
-        if (!empty($data)) {
+        if (!is_array_empty($data)) {
             list ($terminalWidth) = $this->yellow->toolbox->detectTerminalInformation();
             $yAxis = $this->getAxisValue(max($data));
             $textYAxisMax = $yAxis<1000000 ? "$yAxis - " : ">1M - ";
