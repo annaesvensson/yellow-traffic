@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Traffic 0.8.28
+# Traffic 0.8.29
 
 Skapa trafikanalyser från loggfiler.
 
@@ -64,6 +64,7 @@ TrafficSpamFilter: bot|crawler|spider|checker|www.google|duckduckgo.com|bing.com
 
 Följande inställningar kan konfigureras i filen `system/extensions/yellow-system.ini`:
 
+`TrafficStaticUrl` = webbplatsens URL när man använder kommandoraden  
 `TrafficLogDirectory` = mapp med webbserverns logfiler  
 `TrafficAccessFile` = filnamn som reguljära uttryck  
 `TrafficAnalytics` = trafikanalyser som visas, [stödda analyser](#inställningar-analytics)  

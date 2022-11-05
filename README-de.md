@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Traffic 0.8.28
+# Traffic 0.8.29
 
 Zugriffsanalysen aus Logdateien erstellen.
 
@@ -64,6 +64,7 @@ TrafficSpamFilter: bot|crawler|spider|checker|www.google|duckduckgo.com|bing.com
 
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
+`TrafficStaticUrl` = URL der Webseite bei Verwendung der Befehlszeile  
 `TrafficLogDirectory` = Verzeichnis mit Webserver-Logdateien  
 `TrafficAccessFile` = Dateiname als regulärer Ausdruck  
 `TrafficAnalytics` = Zugriffsanalysen die angezeigt werden, [unterstützte Analysen](#einstellungen-analytics)  

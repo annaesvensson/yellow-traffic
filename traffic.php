@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.8.28";
+    const VERSION = "0.8.29";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -11,6 +11,7 @@ class YellowTraffic {
     // Handle initialisation
     public function onLoad($yellow) {
         $this->yellow = $yellow;
+        $this->yellow->system->setDefault("trafficStaticUrl", "auto");
         $this->yellow->system->setDefault("trafficLogDirectory", "/var/log/apache2/");
         $this->yellow->system->setDefault("trafficAccessFile", "(.*)access.log");
         $this->yellow->system->setDefault("trafficAnalytics", "view, content, download, search");
@@ -44,7 +45,7 @@ class YellowTraffic {
                 $statusCode = 500;
                 $this->days = $this->views = $this->requests = 0;
                 $fileName = $this->yellow->system->get("coreExtensionDirectory").$this->yellow->system->get("coreSystemFile");
-                echo "ERROR checking files: Please configure CoreStaticUrl in file '$fileName'!\n";
+                echo "ERROR checking files: Please configure TrafficStaticUrl in file '$fileName'!\n";
             }
             echo "Yellow $command: $this->days day".($this->days!=1 ? "s" : "").", ";
             echo "$this->views view".($this->views!=1 ? "s" : "").", ";
@@ -100,7 +101,7 @@ class YellowTraffic {
             $indexMax = $days<=7 ? 24*$days : $days;
             $indexTimespan = $days<=7 ? 3600 : 86400;
             for ($index=0; $index<$indexMax; ++$index) $view[$index] = $request[$index] = 0;
-            $staticUrl = $this->yellow->system->get("coreStaticUrl");
+            $staticUrl = $this->yellow->system->get("trafficStaticUrl");
             list($scheme, $address, $base) = $this->yellow->lookup->getUrlInformation($staticUrl);
             $locationSearch = $this->yellow->system->get("searchLocation");
             $spamFilter = $this->yellow->system->get("trafficSpamFilter");
@@ -305,7 +306,7 @@ class YellowTraffic {
     
     // Check static settings
     public function checkStaticSettings() {
-        return preg_match("/^(http|https):/", $this->yellow->system->get("coreStaticUrl"));
+        return preg_match("/^(http|https):/", $this->yellow->system->get("trafficStaticUrl"));
     }
     
     // Check request arguments
