@@ -6,6 +6,10 @@ Skapa trafikanalyser från loggfiler.
 
 <p align="center"><img src="traffic-screenshot.png?raw=true" alt="Skärmdump"></p>
 
+## Hur man installerar ett tillägg
+
+[Ladda ner ZIP-filen](https://github.com/annaesvensson/yellow-traffic/archive/main.zip) och kopiera den till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/README-sv.md).
+
 ## Hur man skapar trafikanalyser
 
 Trafikanalyser finns tillgänglig på [kommandoraden](https://github.com/annaesvensson/yellow-command/tree/main/README-sv.md). Den visar sidvisningar, populärt innehåll, nedladdningar och sökfrågor. Öppna ett terminalfönster. Gå till installationsmappen där filen `yellow.php` finns. Skriv `php yellow.php traffic`, du kan lägga till valfria dagar och plats. 
@@ -82,10 +86,6 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 `referring` = lista över refererande webbplatser  
 `missing` = lista över saknade sidor  
 `error` = lista över felsidor  
-
-## Installation
-
-[Ladda ner tillägg](https://github.com/annaesvensson/yellow-traffic/archive/main.zip) och kopiera ZIP-fil till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/README-sv.md).
 
 ## Utvecklare
 

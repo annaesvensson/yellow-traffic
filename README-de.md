@@ -6,6 +6,10 @@ Zugriffsanalysen aus Logdateien erstellen.
 
 <p align="center"><img src="traffic-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[ZIP-Datei herunterladen](https://github.com/annaesvensson/yellow-traffic/archive/main.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man Zugriffsanalysen erstellt
 
 Die Zugriffsanalysen sind in der [Befehlszeile](https://github.com/annaesvensson/yellow-command/tree/main/README-de.md) vorhanden. Es zeigt Seitenaufrufe, beliebte Inhalte, Dateien zum Herunterladen und Suchanfragen. Öffne ein Terminalfenster. Gehe ins Installations-Verzeichnis, dort wo sich die Datei `yellow.php` befindet. Gib ein `php yellow.php traffic` gefolgt von optionalen Tagen, Datum und Ort.
@@ -82,10 +86,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `referring` = Liste der verweisenden Webseiten  
 `missing` = Liste der fehlenden Dateien  
 `error` = Liste der Fehlerseiten  
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/annaesvensson/yellow-traffic/archive/main.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 
