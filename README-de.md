@@ -16,10 +16,6 @@ Die Zugriffsanalysen sind in der [Befehlszeile](https://github.com/annaesvensson
 
 ## Beispiele
 
-Verfügbare Befehle in der Befehlszeile anzeigen:
-
-`php yellow.php`
-
 Zugriffsanalysen in der Befehlszeile erstellen:
 
 `php yellow.php traffic`  
