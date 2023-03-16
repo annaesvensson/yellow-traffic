@@ -16,10 +16,6 @@ The traffic analytics are available at the [command line](https://github.com/ann
 
 ## Examples
 
-Showing available commands at the command line:
-
-`php yellow.php`
-
 Creating traffic analytics at the command line:
 
 `php yellow.php traffic`  
