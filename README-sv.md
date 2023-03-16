@@ -16,10 +16,6 @@ Trafikanalyser finns tillgänglig på [kommandoraden](https://github.com/annaesv
 
 ## Exempel
 
-Visa tillgängliga kommandon på kommandoraden:
-
-`php yellow.php`
-
 Skapa trafikanalyser på kommandoraden:
 
 `php yellow.php traffic`  
