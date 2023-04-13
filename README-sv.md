@@ -12,7 +12,7 @@ Skapa trafikanalyser från loggfiler.
 
 ## Hur man skapar trafikanalyser
 
-Trafikanalyser finns tillgänglig på [kommandoraden](https://github.com/annaesvensson/yellow-command/tree/main/README-sv.md). Den visar sidvisningar, populärt innehåll, nedladdningar och sökfrågor. Öppna ett terminalfönster. Gå till installationsmappen där filen `yellow.php` finns. Skriv `php yellow.php traffic`, du kan lägga till valfria dagar och plats. 
+Trafikanalyser finns tillgänglig på [kommandoraden](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md). Den visar sidvisningar, populärt innehåll, nedladdningar och sökfrågor. Öppna ett terminalfönster. Gå till installationsmappen där filen `yellow.php` finns. Skriv `php yellow.php traffic`, du kan lägga till valfria dagar och plats. 
 
 ## Exempel
 

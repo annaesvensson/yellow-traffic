@@ -12,7 +12,7 @@ Zugriffsanalysen aus Logdateien erstellen.
 
 ## Wie man Zugriffsanalysen erstellt
 
-Die Zugriffsanalysen sind in der [Befehlszeile](https://github.com/annaesvensson/yellow-command/tree/main/README-de.md) vorhanden. Es zeigt Seitenaufrufe, beliebte Inhalte, Dateien zum Herunterladen und Suchanfragen. Öffne ein Terminalfenster. Gehe ins Installations-Verzeichnis, dort wo sich die Datei `yellow.php` befindet. Gib ein `php yellow.php traffic` gefolgt von optionalen Tagen, Datum und Ort.
+Die Zugriffsanalysen sind in der [Befehlszeile](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md) vorhanden. Es zeigt Seitenaufrufe, beliebte Inhalte, Dateien zum Herunterladen und Suchanfragen. Öffne ein Terminalfenster. Gehe ins Installations-Verzeichnis, dort wo sich die Datei `yellow.php` befindet. Gib ein `php yellow.php traffic` gefolgt von optionalen Tagen, Datum und Ort.
 
 ## Beispiele
 
