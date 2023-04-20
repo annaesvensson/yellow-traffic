@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.8.29";
+    const VERSION = "0.8.30";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -109,7 +109,7 @@ class YellowTraffic {
             $locationIgnore = "(".$this->yellow->system->get("coreMediaLocation")."|".$this->yellow->system->get("editLocation").")";
             foreach ($fileNames as $fileName) {
                 if ($this->yellow->system->get("coreDebugMode")>=2) echo "YellowTraffic::analyseRequests file:$fileName\n";
-                $fileHandle = @fopen($fileName, "r");
+                $fileHandle = @fopen($fileName, "rb");
                 if ($fileHandle) {
                     list($timestampFirst) = $this->getLineArguments($this->getFileLineFirst($fileHandle));
                     $timeFirst = strtotime($timestampFirst);
