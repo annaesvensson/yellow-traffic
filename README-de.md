@@ -1,6 +1,6 @@
 <p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
 
-# Traffic 0.8.29
+# Traffic 0.8.30
 
 Zugriffsanalysen aus Logdateien erstellen.
 
