@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.8.30";
+    const VERSION = "0.8.31";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -268,7 +268,7 @@ class YellowTraffic {
         $dy = -abs($y2 - $y1);
         $sy = $y1<$y2 ? 1 : -1;
         $error = $dx + $dy;
-        for (;;) {
+        while (true) {
             $this->drawGraphicsPixel($graphicsBuffer, $xSize, $ySize, $x1, $y1);
             if ($x1==$x2 && $y1==$y2) break;
             $error2 = $error * 2;
@@ -392,7 +392,7 @@ class YellowTraffic {
     public function getFileLineFirst($fileHandle) {
         $line = "";
         fseek($fileHandle, 0);
-        for (;;) {
+        while (true) {
             $dataBuffer = fread($fileHandle, 4096);
             if (feof($fileHandle) || $dataBuffer===false) {
                 $line = false;
