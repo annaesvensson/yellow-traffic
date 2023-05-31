@@ -12,7 +12,7 @@ Create traffic analytics from log files.
 
 ## How to create traffic analytics
 
-The traffic analytics are available at the [command line](https://github.com/annaesvensson/yellow-core). It shows page views, popular content, downloads and search queries. Open a terminal window. Go to your installation folder, where the file `yellow.php` is. Type `php yellow.php traffic`, you can add optional days, date and location.
+You can create traffic analytics at the [command line](https://github.com/annaesvensson/yellow-core). This allows you to evaluate page views, popular content, popular downloads and search queries. Open a terminal window. Go to your installation folder, where the file `yellow.php` is. Type `php yellow.php traffic`, you can add optional days, date and location. This will create traffic analytics and show them on screen.
 
 ## Examples
 
