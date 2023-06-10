@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.8.31";
+    const VERSION = "0.8.32";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -373,6 +373,7 @@ class YellowTraffic {
     
     // Return progress in percent
     public function getProgressPercent($now, $total, $increments, $max) {
+        $max = intval($max/$increments) * $increments;
         $percent = intval(($max/$total) * $now);
         if ($increments>1) $percent = intval($percent/$increments) * $increments;
         return min($max, $percent);
