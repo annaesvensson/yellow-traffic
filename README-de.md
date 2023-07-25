@@ -56,7 +56,7 @@ Verschiedene Spamfilter in den Einstellungen festlegen:
 
 ```
 TrafficSpamFilter: bot|crawler|spider|checker
-TrafficSpamFilter: bot|crawler|spider|checker|facebook.com|instagram.com|twitter.com
+TrafficSpamFilter: bot|crawler|spider|checker|facebook.com|youtube.com|instagram.com
 TrafficSpamFilter: bot|crawler|spider|checker|www.google|duckduckgo.com|bing.com|baidu.com
 ```
 
