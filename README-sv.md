@@ -4,7 +4,7 @@
 
 Skapa trafikanalyser från loggfiler.
 
-<p align="center"><img src="traffic-screenshot.png?raw=true" alt="Skärmdump"></p>
+<p align="center"><img src="SCREENSHOT.png?raw=true" alt="Skärmdump"></p>
 
 ## Hur man installerar ett tillägg
 
