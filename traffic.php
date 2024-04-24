@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.9.1";
+    const VERSION = "0.9.2";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -346,7 +346,7 @@ class YellowTraffic {
     
     // Return referring site URL, if available
     public function getUrlSite($referer) {
-        list($scheme, $address, $base) = $this->yellow->lookup->getUrlInformation($referer);
+        list($scheme, $address) = $this->yellow->lookup->getUrlInformation($referer);
         return ($scheme=="http" || $scheme=="https") ? "$scheme://$address" : "-";
     }
     
