@@ -1,18 +1,18 @@
-<p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
+<p align="right"><a href="readme-de.md">Deutsch</a> &nbsp; <a href="readme.md">English</a> &nbsp; <a href="readme-sv.md">Svenska</a></p>
 
 # Traffic 0.9.2
 
 Zugriffsanalysen aus Logdateien erstellen.
 
-<p align="center"><img src="SCREENSHOT.png" alt="Bildschirmfoto"></p>
+<p align="center"><img src="screenshot.png" alt="Bildschirmfoto"></p>
 
 ## Wie man eine Erweiterung installiert
 
-[ZIP-Datei herunterladen](https://github.com/annaesvensson/yellow-traffic/archive/refs/heads/main.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+[ZIP-Datei herunterladen](https://github.com/annaesvensson/yellow-traffic/archive/refs/heads/main.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/readme-de.md).
 
 ## Wie man Zugriffsanalysen erstellt
 
-Du kannst Zugriffsanalysen in der [Befehlszeile](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md) erstellen. Das gibt dir die Möglichkeit Seitenaufrufe, beliebte Inhalte, beliebte Dateien zum Herunterladen und Suchanfragen auswerten. Öffne ein Terminalfenster. Gehe ins Installations-Verzeichnis, dort wo sich die Datei `yellow.php` befindet. Gib ein `php yellow.php traffic` gefolgt von optionalen Tagen, Datum und Ort. Das erstellt Zugriffsanalysen und zeigt sie auf dem Bildschirm an.
+Du kannst Zugriffsanalysen in der [Befehlszeile](https://github.com/annaesvensson/yellow-core/tree/main/readme-de.md) erstellen. Das gibt dir die Möglichkeit Seitenaufrufe, beliebte Inhalte, beliebte Dateien zum Herunterladen und Suchanfragen auswerten. Öffne ein Terminalfenster. Gehe ins Installations-Verzeichnis, dort wo sich die Datei `yellow.php` befindet. Gib ein `php yellow.php traffic` gefolgt von optionalen Tagen, Datum und Ort. Das erstellt Zugriffsanalysen und zeigt sie auf dem Bildschirm an.
 
 ## Beispiele
 

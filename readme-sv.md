@@ -1,18 +1,18 @@
-<p align="right"><a href="README-de.md">Deutsch</a> &nbsp; <a href="README.md">English</a> &nbsp; <a href="README-sv.md">Svenska</a></p>
+<p align="right"><a href="readme-de.md">Deutsch</a> &nbsp; <a href="readme.md">English</a> &nbsp; <a href="readme-sv.md">Svenska</a></p>
 
 # Traffic 0.9.2
 
 Skapa trafikanalyser från loggfiler.
 
-<p align="center"><img src="SCREENSHOT.png" alt="Skärmdump"></p>
+<p align="center"><img src="screenshot.png" alt="Skärmdump"></p>
 
 ## Hur man installerar ett tillägg
 
-[Ladda ner ZIP-filen](https://github.com/annaesvensson/yellow-traffic/archive/refs/heads/main.zip) och kopiera den till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/README-sv.md).
+[Ladda ner ZIP-filen](https://github.com/annaesvensson/yellow-traffic/archive/refs/heads/main.zip) och kopiera den till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/readme-sv.md).
 
 ## Hur man skapar trafikanalyser
 
-Du kan skapa trafikanalyser på [kommandoraden](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md). Detta låter dig utvärdera sidvisningar, populärt innehåll, populära nedladdningar och sökfrågor. Öppna ett terminalfönster. Gå till installationsmappen där filen `yellow.php` finns. Skriv `php yellow.php traffic`, du kan lägga till valfria dagar och plats. Detta kommer att skapa trafikanalyser och visa dem på skärmen.
+Du kan skapa trafikanalyser på [kommandoraden](https://github.com/annaesvensson/yellow-core/tree/main/readme-sv.md). Detta låter dig utvärdera sidvisningar, populärt innehåll, populära nedladdningar och sökfrågor. Öppna ett terminalfönster. Gå till installationsmappen där filen `yellow.php` finns. Skriv `php yellow.php traffic`, du kan lägga till valfria dagar och plats. Detta kommer att skapa trafikanalyser och visa dem på skärmen.
 
 ## Exempel
 
