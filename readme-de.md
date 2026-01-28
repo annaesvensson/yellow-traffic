@@ -1,8 +1,6 @@
-<p align="right"><a href="readme-de.md">Deutsch</a> &nbsp; <a href="readme.md">English</a> &nbsp; <a href="readme-sv.md">Svenska</a></p>
-
 # Traffic 0.9.2
 
-Zugriffsanalysen aus Logdateien erstellen.
+Zugriffsanalysen aus Logdateien erstellen. Entwickelt von Anna Svensson.
 
 <p align="center"><img src="screenshot.png" alt="Bildschirmfoto"></p>
 
@@ -83,6 +81,4 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 `missing` = Liste der fehlenden Dateien  
 `error` = Liste der Fehlerseiten  
 
-## Entwickler
-
-Anna Svensson. [Hilfe finden](https://datenstrom.se/de/yellow/help/).
+Hast du Fragen? [Hilfe finden](https://datenstrom.se/de/yellow/help/).
