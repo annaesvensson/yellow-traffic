@@ -1,4 +1,4 @@
-# Traffic 0.9.2
+# Traffic 0.9.3
 
 Create traffic analytics from log files. Developed by Anna Svensson.
 

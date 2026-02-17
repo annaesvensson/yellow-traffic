@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.9.2";
+    const VERSION = "0.9.3";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -120,7 +120,7 @@ class YellowTraffic {
                         ($timeFirst<=$timeStop && $timeLast>=$timeStart)) {
                         if ($this->yellow->system->get("coreDebugMode")>=2) {
                             $debug = date("Y-m-d H:i:s", $timeFirst)." - ".date("Y-m-d H:i:s", $timeLast);
-                            echo "YellowTraffic::analyseRequests $debug<br/>\n";
+                            echo "YellowTraffic::analyseRequests $debug<br />\n";
                         }
                     } else {
                         continue;
