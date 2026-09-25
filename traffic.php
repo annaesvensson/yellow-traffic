@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "0.9.3";
+    const VERSION = "1.0.1";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
