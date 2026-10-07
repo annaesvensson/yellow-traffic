@@ -1,4 +1,4 @@
-# Traffic 1.0.1
+# Traffic 1.0.2
 
 Zugriffsanalysen aus Logdateien erstellen. Entwickelt von Anna Svensson.
 

@@ -1,4 +1,4 @@
-# Traffic 1.0.1
+# Traffic 1.0.2
 
 Skapa trafikanalyser från loggfiler. Utvecklad av Anna Svensson.
 

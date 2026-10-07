@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "1.0.1";
+    const VERSION = "1.0.2";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -103,8 +103,8 @@ class YellowTraffic {
             for ($index=0; $index<$indexMax; ++$index) $view[$index] = $request[$index] = 0;
             $staticUrl = $this->yellow->system->get("trafficStaticUrl");
             list($scheme, $address, $base) = $this->yellow->lookup->getUrlInformation($staticUrl);
-            $locationSearch = $this->yellow->system->get("searchLocation");
             $spamFilter = $this->yellow->system->get("trafficSpamFilter");
+            $locationSearch = $this->getSearchLocation();
             $locationDownload = $this->yellow->system->get("coreDownloadLocation");
             $locationIgnore = "(".$this->yellow->system->get("coreMediaLocation")."|".$this->yellow->system->get("editLocation").")";
             foreach ($fileNames as $fileName) {
@@ -312,6 +312,18 @@ class YellowTraffic {
     // Check request arguments
     public function checkRequestArguments($method, $location, $referer) {
         return (($method=="GET" || $method=="POST") && substru($location, 0, 1)=="/" && ($referer=="-" || substru($referer, 0, 4)=="http"));
+    }
+    
+    // Return search location, guess if not found
+    public function getSearchLocation() {
+        $location = "/search/";
+        foreach ($this->yellow->content->top(true, false) as $pageTop) {
+            if ($pageTop->get("layout")=="search") {
+                $location = $pageTop->location;
+                break;
+            }
+        }
+        return $location;
     }
     
     // Return location, decode file-encoding and URL-encoding
