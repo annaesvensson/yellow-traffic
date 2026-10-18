@@ -2,7 +2,7 @@
 // Traffic extension, https://github.com/annaesvensson/yellow-traffic
 
 class YellowTraffic {
-    const VERSION = "1.0.2";
+    const VERSION = "1.0.3";
     public $yellow;         // access to API
     public $days;           // number of days
     public $views;          // number of views
@@ -177,7 +177,7 @@ class YellowTraffic {
                     fclose($fileHandle);
                 } else {
                     $statusCode = 500;
-                    echo "ERROR reading log files: Can't read file '$fileName'!\n";
+                    echo "ERROR reading log files: Can't read file '$fileName', permission denied!\n";
                 }
             }
             unset($referring["-"]);
